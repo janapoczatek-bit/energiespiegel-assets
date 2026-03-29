@@ -19,7 +19,7 @@ const allowedHosts = [
     return;
   }
 
- function gpIsTestPage(path) {
+function gpIsTestPage(path) {
   if (!path) return false;
 
   return (
