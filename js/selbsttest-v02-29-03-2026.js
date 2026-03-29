@@ -28,10 +28,10 @@
     );
   }
 
-  const currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
-  if (!gpIsTestPage(currentPath)) {
-    return;
-  }
+// const currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
+// if (!gpIsTestPage(currentPath)) {
+//   return;
+// }
 
   const GP_FORM_VER = "2026-03-20-2";
   const TOTAL_QUESTIONS = 10;
