@@ -249,8 +249,8 @@
   }
 
   function runLoader(callback) {
-    var loader = document.getElementById("gp-test-loader");
-    var bar = document.querySelector(".gp-loader-progress");
+    var loader = document.getElementById("es-test-loader");
+    var bar = document.querySelector(".es-loader-progress");
 
     if (!loader || !bar) {
       callback();
@@ -285,10 +285,10 @@
 
   function gpFollowupBlock(status) {
     return `
-      <div class="gp-followup">
-        <div class="gp-formclip">
+      <div class="es-followup">
+        <div class="es-formclip">
           <iframe
-            class="gp-brevo"
+            class="es-brevo"
             src="${gpFormUrl(status)}"
             title="Ausführliche Auswertung per E-Mail erhalten"
             frameborder="0"
@@ -390,12 +390,12 @@
         body = `
 <p><strong>Ihr Ergebnis zeigt eine stabile, gut regulierte Basis</strong> – Einordnung aus langjähriger Erfahrung in der Gesundheitspraxis.</p>
 <p>Wie Sie diese Basis gezielt erhalten, zeigen wir Ihnen in Ihrer Auswertung per E-Mail.</p>
-<ul class="gp-result-checklist">
+<ul class="es-result-checklist">
   <li>Was Ihre Vitalität langfristig nährt</li>
   <li>Wie Sie Ihr biologisches Alter positiv beeinflussen</li>
   <li>Impulse für stabile Gesundheit</li>
 </ul>
-<div class="gp-email-hint">
+<div class="es-email-hint">
   Wohin dürfen wir Ihre persönliche Auswertung senden?
 </div>
 ${gpFollowupBlock("gruen")}
@@ -407,12 +407,12 @@ ${gpFollowupBlock("gruen")}
         body = `
 <p><strong>Ihr Ergebnis zeigt erste Anzeichen von Ungleichgewicht</strong> – Einordnung aus langjähriger Erfahrung in der Gesundheitspraxis.</p>
 <p>Was das konkret für Sie bedeutet, zeigen wir Ihnen in Ihrer Auswertung per E-Mail.</p>
-<ul class="gp-result-checklist">
+<ul class="es-result-checklist">
   <li>Wo Ihre größten Krafträuber liegen</li>
   <li>Was jetzt am wichtigsten ist</li>
   <li>Nächste konkrete Schritte</li>
 </ul>
-<div class="gp-email-hint">
+<div class="es-email-hint">
   Wohin dürfen wir Ihre persönliche Auswertung senden?
 </div>
 ${gpFollowupBlock("gelb")}
@@ -424,12 +424,12 @@ ${gpFollowupBlock("gelb")}
         body = `
 <p><strong>Ihr Ergebnis zeigt aktuell eine spürbare Belastung</strong> – Einordnung aus langjähriger Erfahrung in der Gesundheitspraxis.</p>
 <p>Was jetzt wirklich entlastet, zeigen wir Ihnen in Ihrer Auswertung per E-Mail.</p>
-<ul class="gp-result-checklist">
+<ul class="es-result-checklist">
   <li>Wie Sie Ihre Krafträuber erkennen</li>
   <li>Was wieder Stabilität bringt</li>
   <li>Erste Schritte zur Entlastung</li>
 </ul>
-<div class="gp-email-hint">
+<div class="es-email-hint">
   Wohin dürfen wir Ihre persönliche Auswertung senden?
 </div>
 ${gpFollowupBlock("rot")}
