@@ -7,12 +7,13 @@
  * https://cdn.jsdelivr.net/gh/energiespiegel/energiespiegel-assets@main/js/selbsttest-v02-29-03-2026.js
  */
 (function () {
-  const allowedHosts = [
-    "dein-energiespiegel.de",
-    "www.dein-energiespiegel.de",
-    "localhost",
-    "127.0.0.1"
-  ];
+const allowedHosts = [
+  "dein-energiespiegel.de",
+  "www.dein-energiespiegel.de",
+  "localhost",
+  "127.0.0.1",
+  "dein-preview.netlify.app"
+];
 
   if (!allowedHosts.includes(window.location.hostname)) {
     return;
