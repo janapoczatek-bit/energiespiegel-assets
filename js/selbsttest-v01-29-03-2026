@@ -7,10 +7,12 @@
  * Sonst zeigt die Live-Seite bis zu 24h den alten Stand.
  */
 (function () {
-  const allowedHosts = [
-    "gesundheitspraxis-geistert.de",
-    "www.gesundheitspraxis-geistert.de"
-  ];
+const allowedHosts = [
+  "dein-energiespiegel.de",
+  "www.dein-energiespiegel.de",
+  "localhost",
+  "127.0.0.1"
+];
 
   if (!allowedHosts.includes(window.location.hostname)) {
     return;
