@@ -340,6 +340,13 @@
       });
     }
 
+    function scrollToHero() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
     function updateProgress(step) {
       var current = document.getElementById("progress-current");
       var percent = document.getElementById("progress-percent");
