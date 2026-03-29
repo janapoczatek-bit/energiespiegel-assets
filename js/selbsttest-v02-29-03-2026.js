@@ -10,7 +10,7 @@
 const allowedHosts = [
   "dein-energiespiegel.de",
   "www.dein-energiespiegel.de",
-  "dein-energiespiegel.de.netlify.app",
+  "dein-energiespiegelde.netlify.app",
   "localhost",
   "127.0.0.1"
 ];
