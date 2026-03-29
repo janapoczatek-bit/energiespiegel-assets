@@ -10,9 +10,9 @@
 const allowedHosts = [
   "dein-energiespiegel.de",
   "www.dein-energiespiegel.de",
+  "dein-energiespiegel.de.netlify.app",
   "localhost",
-  "127.0.0.1",
-  "dein-preview.netlify.app"
+  "127.0.0.1"
 ];
 
   if (!allowedHosts.includes(window.location.hostname)) {
